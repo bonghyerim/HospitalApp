@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainFragment"
+        android:icon="@drawable/baseline_home_24"
+        android:title="홈" />
+    <item
+        android:id="@+id/mapFragment"
+        android:icon="@drawable/baseline_location_on_24"
+        android:title="병원/약국" />
+    <item
+        android:id="@+id/chatFragment"
+        android:icon="@drawable/baseline_android_24"
+        android:title="AI 챗" />
+    <item
+        android:id="@+id/drugFragment"
+        android:icon="@drawable/baseline_medication_24"
+        android:title="약정보" />
+    <item
+        android:id="@+id/myHealthFragment"
+        android:icon="@drawable/baseline_person_24"
+        android:title="내관리" />
+</menu>

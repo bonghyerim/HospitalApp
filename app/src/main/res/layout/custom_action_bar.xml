@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customToolbar"
+    android:layout_width="match_parent"
+    app:titleMarginStart="16dp"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/white"
+    android:layout_gravity="center_horizontal"
+    android:minHeight="?android:attr/actionBarSize"
+    app:layout_scrollFlags="scroll|enterAlways">
+
+
+
+    <TextView
+        android:id="@+id/customTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="액티비티 이름"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</androidx.appcompat.widget.Toolbar>

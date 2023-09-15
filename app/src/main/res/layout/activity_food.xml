@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FoodActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigationView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="복용약이름"
+            android:textColor="#292929"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <EditText
+            android:id="@+id/medicineName"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="text"
+            tools:layout_editor_absoluteY="46dp" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="복용기간"
+            android:textColor="#292929"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteY="92dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="-54dp"
+            tools:layout_editor_absoluteY="149dp">
+
+            <TextView
+                android:id="@+id/Period1"
+                android:layout_width="150dp"
+                android:layout_height="32dp"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="~"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/Period2"
+                android:layout_width="150dp"
+                android:layout_height="32dp"
+                android:layout_weight="2"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="-71dp"
+            tools:layout_editor_absoluteY="244dp">
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="43dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:foregroundGravity="center_vertical|center"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="복용시간"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/breakfast"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#C3C3C3"
+                android:text="아침"
+                app:cardElevation="4dp"
+                app:cornerRadius="15dp" />
+
+            <Button
+                android:id="@+id/lunch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#C3C3C3"
+                android:text="점심"
+                app:cardElevation="4dp"
+                app:cornerRadius="15dp" />
+
+            <Button
+                android:id="@+id/dinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:backgroundTint="#C3C3C3"
+                android:text="저녁"
+                app:cardElevation="4dp"
+                app:cornerRadius="15dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="피해야 할 음식 직접 입력"
+            android:textColor="#292929"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteY="352dp" />
+
+        <EditText
+            android:id="@+id/editFood"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/border"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            tools:layout_editor_absoluteX="192dp"
+            tools:layout_editor_absoluteY="385dp" />
+
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="피해야 할 음식 선택"
+            android:textColor="#292929"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteY="352dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/soda"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/soda" />
+
+            <ImageView
+                android:id="@+id/alcohol"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/alcohol" />
+
+            <ImageView
+                android:id="@+id/dairyProducts"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/dairyproducts" />
+
+            <ImageView
+                android:id="@+id/coffee"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/coffee" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="탄산음료" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="술" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="유제품" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="60dp"
+                android:layout_height="21dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="커피" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/wheat"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wheat" />
+
+            <ImageView
+                android:id="@+id/honey"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/honey" />
+
+            <ImageView
+                android:id="@+id/grapefruit"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/grapefruit" />
+
+            <ImageView
+                android:id="@+id/meat"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/pork" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="밀" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="꿀" />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="자몽" />
+
+            <TextView
+                android:id="@+id/textView45"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="돼지고기" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3D5AFD"
+            android:text="저장"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:barrierAllowsGoneWidgets="false"
+            app:cornerRadius="15dp"
+            app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="@color/teal_200"
+        app:itemTextColor="#969696"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_menu"
+        tools:layout_editor_absoluteY="675dp" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

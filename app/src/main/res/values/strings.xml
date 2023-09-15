@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">My Doctor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="channel_name">Alarm Channel</string>
+    <string name="channel_description">Channel for displaying alarm notifications</string>
+    <string name="alert_title">선택하세요</string>
+    <string name="txt_resend"><u>다시 보내기</u></string>
+
+    <string-array name="alert_photo">
+        <item>카메라로 사진찍기</item>
+        <item>앨범에서 가져오기</item>
+    </string-array>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+    </style>
+</resources>

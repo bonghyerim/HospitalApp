@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- 배경 색상을 여기에 설정 (여기서는 흰색) -->
+    <stroke
+        android:width="1dp"
+        android:color="#AEAEAE" /> <!-- 테두리의 색상을 여기에 설정 (여기서는 회색) -->
+    <corners android:radius="30dp" /> <!-- 라운드 처리할 모서리의 반지름 값 지정 -->
+</shape>
